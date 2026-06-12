@@ -1,6 +1,9 @@
 function stringChop(str, size) {
   // your code here
 	let ans=[];
+	if (str === null || str === undefined || str === "") {
+        return [];
+    }
 	size=Number(size);
 	if(size==0) return null;
 	let s='';
